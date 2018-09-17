@@ -47,16 +47,33 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("Antes");
-        for (int i = 0; i < distancia.length; i++) {
-            for (int j = 0; j < distancia.length; j++) {
-                System.out.print(" " + distancia[i][j]);
+        System.out.println("Matriz de distancia iniical");for (int i = 0; i < distancia.length; i++) {
+        for (int j = 0; j < distancia.length; j++) {
+                System.out.print("   " + distancia[i][j]);
                 if (j == distancia.length - 1) {
                     System.out.println("");
                 }
             }
         }
+        System.out.println("Matriz de menor distanica a partir de FW");
         FW();
+        for (int i = 0; i < distancia.length; i++) {
+            for (int j = 0; j < distancia.length; j++) {
+                System.out.print("   " + distancia[i][j]);
+                if (j == distancia.length - 1) {
+                    System.out.println("");
+                }
+            }
+        }
+        System.out.println("Matriz de camino resultante");
+        for (int i = 0; i < caminos.length; i++) {
+            for (int j = 0; j < caminos.length; j++) {
+                System.out.print("     " + caminos[i][j]);
+                if (j == caminos.length - 1) {
+                    System.out.println("");
+                }
+            }
+        }
     }
 
 }
